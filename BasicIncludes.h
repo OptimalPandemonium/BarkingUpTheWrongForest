@@ -29,10 +29,10 @@
 #define BackUpOneByte(FP) fseek( FP, -1, SEEK_CUR )
 
 #define Error(...) do													\
-{																		\
-	fprintf( stderr, 													\
+{																				\
+	fprintf( stderr, 														\
 	"Program Failure: Error in file %s in function %s() on line %d.\n",	\
-	__FILE__, __func__, __LINE__ );										\
+	__FILE__, __func__, __LINE__ );									\
 	printf( __VA_ARGS__ );												\
 	exit( EXIT_FAILURE );												\
 } while(0)
