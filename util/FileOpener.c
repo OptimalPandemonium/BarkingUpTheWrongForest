@@ -1,4 +1,4 @@
-#include "FileOpener.h"
+#include "../FileOpener.h"
 
 //This is a safe file opener that I always use.
 FILE *SafeOpen(const char *filename, const char *mode)
